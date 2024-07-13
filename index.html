@@ -52,47 +52,113 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/grad.jpg" alt="" /></span>
-								<p>I am a Research Assistant in Robotics working at the University of Sheffield, and part of the <a href="https://www.tas-resilience.org./home">UKRI TAS Node in Resilience</a> and <a href="https://www.gov.uk/government/organisations/defence-and-security-accelerator">DASA</a> projects. </p>
+								<p>I am a Research Assistant in Medical Robotics working at the University of Sheffield, and part of the <a href="https://www.tas-resilience.org./home">UKRI TAS Node in Resilience</a> and <a href="https://www.gov.uk/government/organisations/defence-and-security-accelerator">DASA</a> projects. </p>
 								<p>My interest in robotics was moulded by obtaining a Bachelors degree in Electronics and Communication from the <a href="https://ktu.edu.in/home.htm;jsessionid=FA5EA3C0E443B01A79416B269ABB5381">APJ Abdul Kalam Technological University</a>, Kerala, India and consecutively pursuing a Master's degree in Robotics at the <a href="https://www.sheffield.ac.uk/">University of Sheffield</a>, Sheffield, UK.
 								My Master's thesis was on teleoperation of the franka emika panda robot manipulator using a haptic master for robot - assisted dressing.</p>
-								<p>Currently I am working on robot manipulation based on different type of controlling methods such as position, velocity and effort.</p>
+								<p>I aim to utilize my skills in developing real-world products, transitioning from research to practical application. The satisfaction derived from seeing a product materialize and positively impact the real world is unparalleled, complementing the research process. </p>
 							</article>
 
 						<!-- Work -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
+								
+								<h3 class="main">Medical Tele-existence (Medi-Tel)</h3>
+								<span class="image main"><img src="images/MediTelproject7.jpg" alt="" /></span>
+								<p>The project's aim is to successfully create a mobile, robotic-controlled uncrewed ground vehicle (UGV), which boasts virtual 
+								reality (VR) capability, to enable medics and operators to assess critical casualties in hazardous environments, allowing them 
+								to perform a remote triage while also ensuring their safety. It is a first of its kind,  fully integrated medical telexistence 
+								solution was developed in just nine months. It features two robotic arms which can effectively remotely operate medical tools 
+								to perform a critical initial assessment of a casualty within 20 minutes, including: temperature, blood pressure and heart rate 
+								checks; carry out a palpation of the abdomen and administer pain relief through an auto-injector, all while streaming real time 
+								data to the remote operator.</p>
+
+								<p> My contribution is developing the robot control side and successfully demonstrated the bi-manual teleoperation of both the 
+									robot arms and integration with the whole system.</p>
+								
+								<h3 class="main">Robot Assited Dressing (RAD)</h3>
+								<span class="image main"><img src="images/RAD1.jpg" alt="" /></span>
+
+								<p>
+									Robot-assisted dressing is performed in close physical interaction with users who may have a wide range of physical 
+									characteristics and abilities. Design of user adaptive and personalized robots in this context is still indicating limited, 
+									or no consideration, of specific user-related issues. As you see in the picture, the first iteration of the robot assisted dressing 
+									was built as a bi-manual system, that is tele-operated with two haptic joysticks, same as in the Medi-Tel system. The system has 
+									been updated since and now we have an automated robot-assisted dressing system compared to teleoperated.
+								</p>
+
+								<p>
+									Moreover, we are currently developing safety contro strategies for the automated dressing system, which will explained in the current 
+									work section.
+								</p>
+								
+								<h3 class="main">Integration of sensors with ROS</h3>
+								<ol>
+									<li>Light and noise electronic boards with arduino uno/nano 33 iot</li>
+									<li>Movella DOT IMU sensors</li>
+									<li>Wittenstein Force/Torque sensor HEX21 & HEX32</li>
+									<li>Botasys Mini-one Force/Torque sensor</li>
+									<li>Analog pedals with arduino to control the opening and closing of robot grippers</li>
+									<li>Zed camera for human pose estimation</li>
+								</ol>
+
 								<h3 class="main">Haptic controlled teleoperation of franka emika panda arm for robot-assisted dressing</h3>
 								<span class="image main"><img src="images/experimentalsetup.png" alt="" /></span>
-								<p>The haptic master is the <a href="https://www.forcedimension.com/products/omega">Omega.6</a> from the Force Dimension company. The cobot is the franka emika panda arm which is controlled by the haptic master through the Robot Operating System (ROS).<br />
-								<br />The pose from the haptic joystick's end-effector is retrieved and converted to the pose value in robot's workspace. These pose values are then used to calculate the joint angles using inverse dynamics.</p>
-								<p>The robot grasps the garment and dresses the left side of the mannequin starting from the wrist, moving to the elbow and halting its motion at the shoulder. This image depicts a person who has experienced a stroke and has upper limb paralysis.</p>
+								<p>The haptic master is the <a href="https://www.forcedimension.com/products/omega">Omega.6</a> from the Force Dimension company. 
+									The cobot is the franka emika panda arm which is controlled by the haptic master through the Robot Operating System (ROS). 
+									The pose from the haptic joystick's end-effector is retrieved and converted to the pose value in robot's workspace. These 
+									pose values are then used to calculate the joint angles using inverse dynamics.</p>
+								<p>The robot grasps the garment and dresses the left side of the mannequin starting from the wrist, moving to the elbow and halting 
+									its motion at the shoulder. This image depicts a person who has experienced a stroke and has upper limb paralysis.</p>
 								
 								<h3 class="main">Mini-Crane</h3>
 								<span class="image main"><img src="images/mech.jpg" alt="" /></span>
-								<p>This was done in reference to the Mechatronics module where two tasks were achieved. One, the mobile robot has to pickup an object and place it two meters away.
-									Second, the mini-crane has to pickup the object and reach its destination by avoiding the obstacle at a meter distance.
+								<p>This was done in reference to the Mechatronics module where two tasks were achieved. One, the mobile robot has to pickup an object 
+									and place it two meters away. Second, the mini-crane has to pickup the object and reach its destination by avoiding the obstacle at a meter distance.
 								</p>
 
 								<h3 class="main">Automated Peltier Heat & Cool Jacket</h3>
 								<span class="image main"><img src="images/jacket2.jpeg" alt="" /></span>
 								<p>This jacket can heat or cool based on the preference of the user. The device used for heating and cooling is peltier modules.
-									When connected to a DC power supply, it can produce heating and cooling effects on its surfaces. It works on the principle of Peltier effect. The modules are connected to the STM32F103C8 microcontroller to control the heating and cooling using PWM signals.
+									When connected to a DC power supply, it can produce heating and cooling effects on its surfaces. It works on the principle of 
+									Peltier effect. The modules are connected to the STM32F103C8 microcontroller to control the heating and cooling using PWM signals.
 								</p>
-								<p>An application was also developed to enable to user to input the preferred temperature. The temperature values are sent to the ESP32 Wi-Fi module, which is then connected to the microcontroller using USART protocol.
-									The whole system is powered using a power bank with a switch incorporated. One surface of the peltier modules are pasted on to small heat sinks to remove heat and copper strips are pasted on to the other surface to distribute cooling.
+								<p>An application was also developed to enable to user to input the preferred temperature. The temperature values are sent to the ESP32 
+									Wi-Fi module, which is then connected to the microcontroller using USART protocol. The whole system is powered using a power bank with 
+									a switch incorporated. One surface of the peltier modules are pasted on to small heat sinks to remove heat and copper strips are pasted 
+									on to the other surface to distribute cooling.
 								</p>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/newamrc.webp" alt="" /></span>
-								<p>My current work as a research assistant includes developing the robot side of this project. THe biggest challenge is to control both the arms simultaneously for different tasks.
-									More information about this project can be found in links below:<br />
-									<br />1.<a href="https://www.amrc.co.uk/news/new-research-project-to-triage-military-personnel-in-combat-using-robotics">AMRC</a>
-									<br />2.<a href="https://www.sheffield.ac.uk/news/new-robots-set-triage-uk-military-personnel-combat">The University of Sheffield</a>
-									<br />3.<a href="https://www.telegraph.co.uk/news/2023/01/06/robot-doctors-built-help-treat-wounded-soldiers-battlefield/">The Telegraph</a>
+								<h3 class="major">Current Work</h3>
+								<h3 class="main">Safety Control Strategies for Automated Robot Assisted Dressing System</h3>
+								<p>
+									We are developing control strategies that ensures the safety of the person that will be dressed by the system. It encorporates a 
+									zed camera that does the human pose tracking and sends the required joint positions as waypoints to the robot. By utilizing the 
+									frankY library, real time pose updates are sent if the person moves the arm, which means the system works in real-time. Some of the 
+									control strategies developed are, cloth snag, pain detection, emergency stop, shared control etc.
 								</p>
+								<h3 class="main">Integrating HoloLens 2 with ROS and gazebo for eye-tracking</h3>
+								<p>
+									This is being researched where the eye tracking is used to teleoperate the robot to to multiple tasks. This is in collaboration 
+									with a PhD student from the department of computer science. 
+								</p>
+								<h3 class="main">Enhancing trust for patients with integration of Digital Twin in the Robot-Assisted Dressing System</h3>
+								<p>
+									Here, the robot assisted dressing system is created as a digital twin in Unity environement. THe real robot is shadowed in the 
+									simulation and currently the plan is to use the digital twin as a guide to the user and as a communication tool to display the
+									robot's decisions and actions.
+								</p>
+								<p>
+									The Hololens will be used by the patient which will display the digital twin in it and will be used for training the person for the
+									assisted dressing system.
+								</p>
+								<h3 class="main">Testing the resilience of the developed control strategies through model based simulations</h3>
+								<p>
+									This project aims to integrate the control strategies and SLEEC rules into an model based checker, available on the robochart tool
+									developed by the University of York. This project is collaborated with the University of York, who have developed the SLEEC rules.
+								</p>								
 							</article>
 
 						<!-- Elements -->
@@ -340,9 +406,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<!-- <footer id="footer">
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					</footer> -->
 
 			</div>
 
